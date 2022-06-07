@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Typical JavaScript interview tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="section">
+        <h2>Palindrome</h2>
+        <p>
+            <b>Палиндром</b> — слово, предложение или последовательность символов, которая абсолютно одинаково читается как в привычном направлении, так и в обратном.<br>
+            <b>К примеру,</b> “Anna” — это палиндром, а “table” и “John” — нет.
+        </p>
+        <div class="message"></div>
+        <div class="error_message"></div>
+        <form action="" onsubmit="return palindrome();">
+            <div class="input_field">
+                <input type="text" placeholder="Enter your word here" id="word">
+            </div>
+            <div class="btn">
+                <input type="submit" value="Check...">
+            </div>
+        </form>
+    </div>
+    <div class="section">
+        <h2>FizzBuzz</h2>
+        <p> <b>Функция</b>, выводящая числа от 1 до n, где n — это целое число, которая функция
+            принимает в качестве параметра, с такими <u>условиями</u>:
+        </p>
+            <ul>
+                <li>вывод fizz вместо чисел, кратных 3;</li>
+                <li>вывод buzz вместо чисел, кратных 5;</li>
+                <li>вывод fizzbuzz вместо чисел, кратных как 3, так и 5.</li>
+            </ul>
+        <div class="message2"></div>
+        <div class="error_message2"></div>
+        <form action="" onsubmit="return fizzbuzz();">
+            <div class="input_field">
+                <input type="number" placeholder="Your number..." id="number">
+            </div>
+            <div class="btn">
+                <input type="submit" value="Result is...">
+            </div>
+        </form>
+    </div>
+    <div class="section">
+        <h2>Anagram</h2>
+        <p>
+            <b>Анаграмма</b> — слово, которое содержит все буквы другого слова в том же количестве, но ином порядке.<br>
+            Функция, которая проверяет, являются ли две строки анаграммами, причем регистр букв не имеет значения.
+            <b>Учитываются</b> лишь символы; пробелы или знаки препинания в расчет не берутся.
+        </p>
+        <div class="message3"></div>
+        <div class="error_message3"></div>
+        <form action="" onsubmit="return anagram();">
+            <div class="input_field">
+                <input type="text" placeholder="Enter your first word here" id="str1">
+            </div>
+            <div class="input_field">
+                <input type="text" placeholder="Enter your second word here" id="str2">
+            </div>
+            <div class="btn">
+                <input type="submit" value="Check...">
+            </div>
+        </form>
+    </div>
+    <div class="section">
+        <h2>Find Vowels</h2>
+        <p>
+            <b>Функция</b>, принимающая строку в качестве аргумента и возвращающую <b>количество</b> гласных, которые содержатся в строке.<br>
+            <b>Гласными</b> являются «a», «e», «i», «o», «u».
+        </p>
+        <div class="message4"></div>
+        <div class="error_message4"></div>
+        <form action="" onsubmit="return findVowels();">
+            <div class="input_field">
+                <input type="text" placeholder="Enter your text here" id="str">
+            </div>
+            <div class="btn">
+                <input type="submit" value=" Check... ">
+            </div>
+        </form>
+    </div>
+    <div class="section">
+        <h2>Fibonacci</h2>
+        <p>
+            <b>Последовательность Фибоначчи</b> — это ряд чисел, где каждое последующее является суммой двух предыдущих.
+            Так, первые десять чисел выглядят следующим образом: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34.<br>
+            <b>Функция</b>, которая возвращает n-ную запись в определенной последовательности,
+            причем n — число, которое передается в качестве аргумента функции.
+        </p>
+        <div class="message5"></div>
+        <div class="error_message5"></div>
+        <form action="" onsubmit="return fibonacci();">
+            <div class="input_field">
+                <input type="number" placeholder="Your number..." id="num">
+            </div>
+            <div class="btn">
+                <input type="submit" value="Result is...">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+<script src="./script/palindrome.js"></script>
+<script src="./script/fizzbuzz.js"></script>
+<script src="./script/anagram.js"></script>
+<script src="./script/findvowels.js"></script>
+<script src="./script/fibonacci.js"></script>
+</html>
